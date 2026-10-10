@@ -1,0 +1,51 @@
+[
+    {
+        "id": "plan_erntedank_20261011",
+        "createdAt": "2026-10-10T08:00:00.000Z",
+        "templateId": "worship",
+        "templateTitle": "Erntedankgottesdienst",
+        "badge": "Gottesdienst",
+        "badgeEn": "Worship Service",
+        "serverSaved": true,
+        "isDraft": false,
+        "enableCarpool": false,
+        "details": {
+            "title": "Erntedankgottesdienst",
+            "startDate": "2026-10-11",
+            "startTime": "",
+            "endDate": "2026-10-11",
+            "endTime": "",
+            "location": "Pulsschlag Deggendorf",
+            "organizer": "Christoph",
+            "organizerEmail": "christoph@pulsschlag.church",
+            "extraInfo": "Erntedankgottesdienst mit digitaler Dankbarkeits-Fotowand („Dafür bin ich dankbar“)."
+        },
+        "gratitudeWall": {
+            "enabled": true,
+            "title": "Dafür bin ich dankbar",
+            "introduction": "Unsere digitalen Erntedankgaben: Lade ein Bild hoch, das zeigt, wofür du dankbar bist.",
+            "uploadToken": "up_dankbar_20261011",
+            "wallToken": "wall_dankbar_20261011",
+            "uploadStatus": "open",
+            "wallStatus": "open",
+            "scheduledOpen": null,
+            "scheduledClose": null,
+            "keepWallVisibleAfterClose": true,
+            "photos": []
+        },
+        "roles": [
+            {
+                "id": "lead",
+                "name": "Gottesdienstleitung",
+                "default": "Christoph",
+                "volunteers": [
+                    "Secret Volunteer 1"
+                ]
+            }
+        ],
+        "gear": [
+            "Secret equipment item"
+        ],
+        "updatedAt": 1791626319000
+    }
+]

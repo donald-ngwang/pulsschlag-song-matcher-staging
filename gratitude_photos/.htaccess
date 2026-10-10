@@ -1,0 +1,6 @@
+<FilesMatch "\.(php|phtml|php3|php4|php5|php7|phps|cgi|pl|sh|exe|py)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .phps
+SetHandler default-handler

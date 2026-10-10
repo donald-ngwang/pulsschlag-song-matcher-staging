@@ -1,0 +1,23 @@
+<IfModule mod_headers.c>  
+    Header set Cache-Control "no-cache, no-store, must-revalidate"  
+    Header set Pragma "no-cache"  
+    Header set Expires 0  
+</IfModule> 
+
+# Deny direct access to sensitive file extensions (JSON databases, SQLite, backups, environment)
+<FilesMatch "\.(json|sqlite|db|lock|log|bak|old|env|md)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order deny,allow
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# Explicitly deny direct HTTP requests to data directories
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^api/data(/.*)?$ - [F,L]
+    RewriteRule ^data(/.*)?$ - [F,L]
+</IfModule>
